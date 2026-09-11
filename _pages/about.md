@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Associate in the [Computer Systems Laboratory](https://sites.google.com/korea.ac.kr/csl) at Korea University, working with [Prof. Jeongseob Ahn](https://jeongseob.github.io/). who also advised my M.S. research.
+I am a Research Associate in the [Computer Systems Laboratory](https://sites.google.com/korea.ac.kr/csl) at Korea University, working with [Prof. Jeongseob Ahn](https://jeongseob.github.io/), who also advised my M.S. research.
 
 My research interests broadly lie in **computer architecture**. I am interested in architectural bottlenecks at the intersection of workloads, hardware, and system software, and in hardware–software co-design for efficient and scalable systems.
 

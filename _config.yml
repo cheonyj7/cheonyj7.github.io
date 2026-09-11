@@ -31,12 +31,12 @@ author:
   employer         : "Korea University"
   uri              : # URL
   email            : "yjcheon@csl.korea.ac.kr"
-  cv               : "/files/CV_Youngjoon_Cheon" 
+  cv               : "/files/CV_Youngjoon_Cheon.pdf"
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : # "https://orcid.org/yourorcidurl"
@@ -67,7 +67,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
