@@ -9,7 +9,7 @@ redirect_from:
 
 I am a Research Associate in the [Computer Systems Laboratory](https://sites.google.com/korea.ac.kr/csl) at Korea University, working with [Prof. Jeongseob Ahn](https://jeongseob.github.io/), who also advised my M.S. research.
 
-My research interests broadly lie in **computer architecture**. I am interested in architectural bottlenecks at the intersection of workloads, hardware, and system software, and in hardware–software co-design for efficient and scalable systems.
+My research interests broadly lie in **computer architecture**, with a focus on hardware–software co-design for efficient and scalable systems. I am particularly interested in architectural bottlenecks that arise from the interaction between workloads, hardware, and system software.
 
 
 ## Research Interests
