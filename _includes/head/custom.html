@@ -19,4 +19,26 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="var(--global-bg-color)"/>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("a[href]").forEach(function (link) {
+    try {
+      const url = new URL(link.href, window.location.href);
+
+      const isExternal =
+        (url.protocol === "http:" || url.protocol === "https:") &&
+        url.hostname !== window.location.hostname;
+
+      const isPDF =
+        url.pathname.toLowerCase().endsWith(".pdf");
+
+      if (isExternal || isPDF) {
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      }
+    } catch (e) {}
+  });
+});
+</script>
+
 <!-- end custom head snippets -->
