@@ -48,6 +48,10 @@
   border-bottom: 2px solid #b8cad8;
 }
 
+.masthead {
+  border-bottom: 1px solid #bcc7cf !important;
+}
+
 .author__icon-links {
   display: flex !important;
   align-items: center;
@@ -72,7 +76,7 @@
   width: 92%;
   height: 1px;
 
-  background: #cbd3d9;
+  background: #bcc7cf;
 }
 
 .author__icon-links a {
