@@ -56,11 +56,23 @@
   margin-top: 0.8rem;
   padding-top: 0.8rem;
 
-  /* Short divider above icons */
-  background-image: linear-gradient(#cbd3d9, #cbd3d9);
-  background-repeat: no-repeat;
-  background-size: 82% 1px;
-  background-position: left top;
+  border-top: none !important;
+  background: none !important;
+
+  position: relative;
+}
+
+.author__icon-links::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 9rem;
+  height: 1px;
+
+  background: #cbd3d9;
 }
 
 .author__icon-links a {
@@ -78,4 +90,17 @@
 .author__icon-links a:hover {
   color: #4f7fa3;
   transform: translateY(-1px);
+}
+
+.masthead .site-title {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+.masthead .site-title,
+.masthead .masthead__menu-item--lg,
+.masthead .masthead__menu-item--lg a {
+  border-bottom: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
 }
