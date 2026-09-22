@@ -49,11 +49,17 @@
 }
 
 @media (min-width: 1024px) {
-  .sidebar {
-    background-image: linear-gradient(#dfe5e9, #dfe5e9);
-    background-repeat: no-repeat;
-    background-size: 1px 100%;
-    background-position: calc(100% - 0.7rem) 0;
+  .sidebar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.8rem;
+
+    width: 1px;
+    background: #d7dde2;
+
+    pointer-events: none;
   }
 }
 
@@ -63,7 +69,7 @@
   gap: 1rem;
   margin-top: 0.8rem;
   padding-top: 0.8rem;
-  border-top: 1px solid #e1e6ea;
+  border-top: 1px solid #cbd3d9;
 }
 
 .author__icon-links a {
