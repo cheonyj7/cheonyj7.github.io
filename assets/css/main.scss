@@ -52,49 +52,49 @@
   border-bottom: 1px solid #bcc7cf !important;
 }
 
-.author__icon-links {
-  display: flex !important;
-  align-items: center;
-  gap: 1rem;
+// .author__icon-links {
+//   display: flex !important;
+//   align-items: center;
+//   gap: 1rem;
 
-  margin-top: 0.8rem;
-  padding-top: 0.8rem;
+//   margin-top: 0.8rem;
+//   padding-top: 0.8rem;
 
-  border-top: none !important;
-  background: none !important;
+//   border-top: none !important;
+//   background: none !important;
 
-  position: relative;
-}
+//   position: relative;
+// }
 
-.author__icon-links::before {
-  content: "";
-  position: absolute;
+// .author__icon-links::before {
+//   content: "";
+//   position: absolute;
 
-  top: 0;
-  left: 0;
+//   top: 0;
+//   left: 0;
 
-  width: 92%;
-  height: 1px;
+//   width: 92%;
+//   height: 1px;
 
-  background: #bcc7cf;
-}
+//   background: #bcc7cf;
+// }
 
-.author__icon-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+// .author__icon-links a {
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
 
-  color: #4f5963;
-  font-size: 1.15rem;
+//   color: #4f5963;
+//   font-size: 1.15rem;
 
-  text-decoration: none;
-  transition: color 0.15s ease, transform 0.15s ease;
-}
+//   text-decoration: none;
+//   transition: color 0.15s ease, transform 0.15s ease;
+// }
 
-.author__icon-links a:hover {
-  color: #4f7fa3;
-  transform: translateY(-1px);
-}
+// .author__icon-links a:hover {
+//   color: #4f7fa3;
+//   transform: translateY(-1px);
+// }
 
 .masthead .site-title {
   border-bottom: none !important;
@@ -200,6 +200,21 @@
   transform: translateY(-1px);
 }
 
+.home-hero__avatar {
+  flex: 0 0 150px;
+  width: 150px;
+}
+
+.home-hero__avatar img {
+  display: block;
+  width: 150px !important;
+  height: 150px !important;
+  max-width: 150px !important;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .home-hero {
@@ -207,9 +222,15 @@
     gap: 1.5rem;
   }
 
-  .home-hero__photo img {
-    width: 140px;
-    height: 140px;
+  .home-hero__avatar {
+    flex: 0 0 120px;
+    width: 120px;
+  }
+
+  .home-hero__avatar img {
+    width: 120px !important;
+    height: 120px !important;
+    max-width: 120px !important;
   }
 
   .home-hero__name {
