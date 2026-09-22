@@ -40,10 +40,46 @@
 
 .page__content h2 {
   margin-top: 2.2rem;
-  padding-top: 1.1rem;
-  padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0.45rem;
   margin-bottom: 1rem;
 
-  border-top: 1px solid #d0d0d0;
-  border-bottom: none;
+  border-top: none;
+  border-bottom: 2px solid #b8cad8;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    background: #f5f8fa;
+    border: 1px solid #e6ebef;
+    border-radius: 8px;
+    padding: 1.2rem 1rem;
+    box-sizing: border-box;
+  }
+}
+
+.author__icon-links {
+  display: flex !important;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #e1e6ea;
+}
+
+.author__icon-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #4f5963;
+  font-size: 1.15rem;
+
+  text-decoration: none;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.author__icon-links a:hover {
+  color: #4f7fa3;
+  transform: translateY(-1px);
 }
