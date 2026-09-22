@@ -1,0 +1,74 @@
+{% include base_path %}
+
+<section class="home-hero">
+
+  <div class="home-hero__avatar">
+    {% if site.author.avatar contains "://" %}
+      <img src="{{ site.author.avatar }}"
+           alt="{{ site.author.name }}">
+    {% else %}
+      <img src="{{ site.author.avatar | prepend: '/images/' | prepend: base_path }}"
+           alt="{{ site.author.name }}">
+    {% endif %}
+  </div>
+
+  <div class="home-hero__content">
+
+    <h1 class="home-hero__name">
+      {{ site.author.name }}
+    </h1>
+
+    <div class="home-hero__role">
+      {{ site.author.role }}
+    </div>
+
+    <div class="home-hero__affiliation">
+      {{ site.author.affiliation }}
+    </div>
+
+    {% if site.author.location %}
+      <div class="home-hero__location">
+        <i class="fas fa-location-dot" aria-hidden="true"></i>
+        <span>{{ site.author.location }}</span>
+      </div>
+    {% endif %}
+
+    <div class="home-hero__links">
+
+      {% if site.author.email %}
+        <a href="mailto:{{ site.author.email }}"
+           title="Email"
+           aria-label="Email">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+        </a>
+      {% endif %}
+
+      {% if site.author.googlescholar %}
+        <a href="{{ site.author.googlescholar }}"
+           title="Google Scholar"
+           aria-label="Google Scholar">
+          <i class="ai ai-google-scholar" aria-hidden="true"></i>
+        </a>
+      {% endif %}
+
+      {% if site.author.github %}
+        <a href="https://github.com/{{ site.author.github }}"
+           title="GitHub"
+           aria-label="GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+      {% endif %}
+
+      {% if site.author.cv %}
+        <a href="{{ site.author.cv }}"
+           title="CV"
+           aria-label="CV">
+          <i class="fas fa-file-lines" aria-hidden="true"></i>
+        </a>
+      {% endif %}
+
+    </div>
+
+  </div>
+
+</section>

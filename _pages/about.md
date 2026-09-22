@@ -1,11 +1,16 @@
 ---
 permalink: /
-title: "About"
-author_profile: true
+title: ""
+author_profile: false
+classes: wide
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+{% include home-hero.html %}
+
+## About
 
 I am a Research Associate in the [Computer Systems Laboratory](https://sites.google.com/korea.ac.kr/csl) at Korea University, working with [Prof. Jeongseob Ahn](https://jeongseob.github.io/), who also advised my M.S. research.
 
