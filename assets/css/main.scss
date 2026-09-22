@@ -50,19 +50,10 @@
 
 @media (min-width: 1024px) {
   .sidebar {
-    position: relative;
-    padding-right: 1.5rem;
-    box-sizing: border-box;
-  }
-
-  .sidebar::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0.7rem;
-    width: 1px;
-    background: #dfe5e9;
+    background-image: linear-gradient(#dfe5e9, #dfe5e9);
+    background-repeat: no-repeat;
+    background-size: 1px 100%;
+    background-position: calc(100% - 0.7rem) 0;
   }
 }
 
