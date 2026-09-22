@@ -55,12 +55,17 @@
     box-shadow 0.15s ease;
 }
 
+.masthead .greedy-nav .visible-links a::before {
+  height: 2px;
+  background: #4f7fa3;
+}
+
 .masthead .masthead__menu-item a:hover {
   color: #4f7fa3;
 
   transform: translateY(-1px);
 
-  box-shadow: inset 0 -1px 0 currentColor !important;
+  box-shadow: none !important;
 }
 
 .masthead .masthead__menu-item--lg.selected a {
@@ -201,6 +206,27 @@
   transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
 }
 
+/* Reserve space for the underline on every icon */
+.home-hero__links a i {
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.home-hero__links a:hover {
+  background: #e2ebf3;
+  color: #2c5d86;
+
+  text-decoration: none !important;
+
+  transform: translateY(-1px);
+}
+
+/* Same underline for Email / Scholar / GitHub / CV */
+.home-hero__links a:hover i {
+  border-bottom-color: #4f7fa3;
+}
+
 .home-hero__avatar {
   flex: 0 0 150px;
   width: 150px;
@@ -214,17 +240,6 @@
 
   object-fit: cover;
   border-radius: 50%;
-}
-
-.home-hero__links a:hover {
-  background: #e2ebf3;
-  color: #2c5d86;
-  transform: translateY(-1px);
-}
-
-.home-hero__links a:hover i {
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 2px;
 }
 
 @media (max-width: 768px) {
