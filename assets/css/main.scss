@@ -48,28 +48,19 @@
   border-bottom: 2px solid #b8cad8;
 }
 
-@media (min-width: 1024px) {
-  .sidebar::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0.8rem;
-
-    width: 1px;
-    background: #d7dde2;
-
-    pointer-events: none;
-  }
-}
-
 .author__icon-links {
   display: flex !important;
   align-items: center;
   gap: 1rem;
+
   margin-top: 0.8rem;
   padding-top: 0.8rem;
-  border-top: 1px solid #cbd3d9;
+
+  /* Short divider above icons */
+  background-image: linear-gradient(#cbd3d9, #cbd3d9);
+  background-repeat: no-repeat;
+  background-size: 82% 1px;
+  background-position: left top;
 }
 
 .author__icon-links a {
