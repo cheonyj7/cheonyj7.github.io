@@ -227,20 +227,20 @@
   border-bottom-color: #4f7fa3;
 }
 
-.home-hero__avatar {
-  flex: 0 0 150px;
-  width: 150px;
-}
+// .home-hero__avatar {
+//   flex: 0 0 150px;
+//   width: 150px;
+// }
 
-.home-hero__avatar img {
-  display: block;
-  width: 150px !important;
-  height: 150px !important;
-  max-width: 150px !important;
+// .home-hero__avatar img {
+//   display: block;
+//   width: 150px !important;
+//   height: 150px !important;
+//   max-width: 150px !important;
 
-  object-fit: cover;
-  border-radius: 50%;
-}
+//   object-fit: cover;
+//   border-radius: 50%;
+// }
 
 @media (max-width: 768px) {
   .home-hero {
@@ -248,16 +248,16 @@
     gap: 1.5rem;
   }
 
-  .home-hero__avatar {
-    flex: 0 0 120px;
-    width: 120px;
-  }
+  // .home-hero__avatar {
+  //   flex: 0 0 120px;
+  //   width: 120px;
+  // }
 
-  .home-hero__avatar img {
-    width: 120px !important;
-    height: 120px !important;
-    max-width: 120px !important;
-  }
+  // .home-hero__avatar img {
+  //   width: 120px !important;
+  //   height: 120px !important;
+  //   max-width: 120px !important;
+  // }
 
   .home-hero__name {
     font-size: 2rem;
